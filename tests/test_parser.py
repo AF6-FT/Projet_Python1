@@ -14,3 +14,8 @@ class TestParser(unittest.TestCase):
         self.assertEqual(event.status, "Failed")
         self.assertEqual(event.username, "root")
         self.assertEqual(event.ip, "1.2.3.4")
+
+    def test_accepted(self) -> None:
+        event = self.parser.parse_line(PREFIX + "Accepted password for bob from 1.2.3.4 port 5 ssh2")
+        self.assertEqual(event.status, "Success")
+        self.assertEqual(event.username, "bob")
