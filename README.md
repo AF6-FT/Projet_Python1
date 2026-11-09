@@ -56,3 +56,7 @@ Je n'ai pas modifié `ingestion/` ni `processing/`, donc je les ai contournés d
 ## Tests
 
     python3 -m unittest discover -s tests -t .
+
+## Tests
+
+    python3 -m unittest discover -s tests -t .
