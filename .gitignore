@@ -15,3 +15,4 @@ wheels/
 # Fichiers générés par l'application
 logs/
 output/
+*.log
