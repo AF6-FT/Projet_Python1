@@ -52,3 +52,7 @@ Je n'ai pas modifié `ingestion/` ni `processing/`, donc je les ai contournés d
 ## Exemple de lancement
 
     uv run main.py --no-show --no-geo
+
+## Tests
+
+    python3 -m unittest discover -s tests -t .
